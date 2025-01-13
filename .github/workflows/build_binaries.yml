@@ -1,0 +1,31 @@
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions: write-all
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Get next version
+        uses: reecetech/version-increment@2024.10.1
+        id: version
+        with:
+          scheme: calver
+          increment: patch
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m pip install pyinstaller
+      - name: Build Binaries
+        run: pyinstaller ./ForzaAuctionHouseSniper.py -c -F
+      - name: Create Release
+        uses: ncipollo/release-action@v1.15.0
+        with:
+          name: "Release ${{ steps.version.outputs.v-version }}"
+          tag: "${{ steps.version.outputs.v-version }}"
+          makeLatest: "true"
+          artifacts: "./dist/ForzaAuctionHouseSniper.exe"
