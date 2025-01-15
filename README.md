@@ -8,26 +8,28 @@ Please be aware that this bot does not place bids on cars in the auction house; 
 
 **The program will only function with a 16:9 screen resolution and requires a minimum of 60 FPS, along with default brightness and HUD scaling settings.**
 
-**The entire program is written in Python, so you’ll need to install Python and the necessary libraries if you haven’t already.**
+**The program is available as a compiled executable**
 
-To install the required libraries, run the following command in the console:  
+**As an alternative you can run the program with Python, but you’ll need to install Python and the necessary libraries if you haven’t already.**
+
+To install the required libraries, run the following command in the console:
 
 ```pip install -r requirements.txt```
 
 Before launching the script you need to setup a few things, don't worry this isnt anything substantial, but you will need to do this each time you run the program.
 
 Step 1:
-  ![1](https://github.com/user-attachments/assets/4fbff664-dfab-4896-8f5d-d6c2bbab8ffb)
+  ![1](https://github.com/user-attachments/assets/3718ceca-438f-44ee-83e9-fd9ecb4972ed)
 
   Navigate to the screen displayed above.
   
 Step 2:
-  ![2](https://github.com/user-attachments/assets/c90c95ff-925f-4bea-986a-e4e34cb5a4a0)
+  ![2](https://github.com/user-attachments/assets/f6d7ad53-135e-4538-8935-b2d55af7875a)
 
   Enter the auction house; your screen should resemble the image shown above.
   
 Step 3:
-  ![3](https://github.com/user-attachments/assets/08e226a3-e9ac-4190-a094-bd2d6e8ea241)
+  ![3](https://github.com/user-attachments/assets/9811482a-ce13-4be1-a2c6-20dbda85af9f)
 
   Open the search function in the auction house and adjust the settings to your desired configuration.  
 
@@ -39,7 +41,7 @@ Step 4:
   
   Confirm your search configuration and then back out of the search screen to return to the main auction house interface.
   
-  ![4](https://github.com/user-attachments/assets/b0f4322f-91fa-4ae9-8e42-db1a7af23018)
+  ![4](https://github.com/user-attachments/assets/fef91b9c-3e2f-4cbf-8c9a-611ba9795983)
 
   After completing these steps, your screen should resemble something similar to the image shown above.
   
